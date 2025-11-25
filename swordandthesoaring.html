@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review: The Sword & The Soaring</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* BASE MONOCHROME & FONT STYLES (NeXT/Early Browser) */
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #d8d8d8; /* Light gray "desktop" background */
+            color: #000000; /* Black text only */
+        }
+        /* Style for the main container to simulate a simple application window */
+        .page-container {
+            max-width: 800px; 
+            margin: 20px auto; /* Centered on the "desktop" */
+            border: 2px solid #000; /* Outer black border */
+            box-shadow: 4px 4px 0 #888; /* Simple 3D shadow effect */
+            background-color: #ffffff; /* Document background is white */
+        }
+
+        /* HEADER/TITLE BAR STYLES */
+        .window-title-bar {
+            background-color: #c0c0c0; /* Standard gray UI bar */
+            border-bottom: 2px solid #000;
+            padding: 4px 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        /* LINK STYLES (Default Underline Blue) */
+        .classic-link {
+            text-decoration: underline;
+            color: #0000ff; 
+            cursor: pointer;
+        }
+        .classic-link:hover {
+            color: #800080; /* Purple/visited color on hover */
+        }
+
+        /* HEADING STYLES (Simulated H1/H2) */
+        .h1-vintage {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .h2-vintage {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 1rem;
+            margin-bottom: 0.3rem;
+            border-bottom: 1px solid #000;
+            display: inline-block; /* Only underline the text itself */
+        }
+
+        /* SCORE BADGE - Pure Monochromatic */
+        .score-badge {
+            font-weight: 700;
+            padding: 1px 4px;
+            border: 1px solid #000;
+            background-color: #c0c0c0; /* Gray background for contrast */
+            color: #000;
+            font-size: 0.8rem;
+        }
+        
+        /* Utility for back button */
+        .back-link {
+            font-size: 0.875rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <div class="page-container">
+
+        <!-- Simulated Window Title Bar -->
+        <header class="window-title-bar">
+            Document: The Sword & The Soaring Review
+        </header>
+
+        <main class="p-6 md:p-8">
+
+            <a href="index.html" class="classic-link back-link mb-4 block">&lt; &lt; Return to Landing Page</a>
+
+            <p class="h1-vintage"><em>The Sword & The Soaring</em> by Navy Blue</p>
+            
+            <!-- Image and Short Description Section (Flex Layout for side-by-side) -->
+            <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6 py-4 mb-6 border-b border-black">
+                
+                <!-- Album Cover (Larger on Review Page) -->
+             <img class="w-24 h-24 flex-shrink-0 border-2 border-black"
+     src="https://i.scdn.co/image/ab67616d0000b27383a1d9249e5d76e37c13b641" 
+     alt="Cover for The Sword & The Soaring by Navy Blue"
+     onerror="this.onerror=null;this.src='https://placehold.co/400x400/f00/fff?text=IMAGE+ERROR';"
+>
+
+                <!-- Album Details and Short Description -->
+                <div class="sm:w-2/3">
+                    <p class="text-xl font-extrabold mb-2">SCORE: <span class="score-badge text-lg">10.0 / 10</span></p>
+                    <p class="mb-3 text-sm">
+                        **Artist:** Navy Blue <br>
+                        **Genre:** Abstract Hip Hop, Jazz Rap <br>
+                        **Release Date:** 2025.11.11
+                    </p>
+                    <p class="text-sm border-t border-b py-2 border-dashed border-gray-500">
+                        *Short Description:* A complex emotional landscape that explores losing past relationships and making new connections; and how that shapes you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Full Review Text -->
+            <h2 class="h2-vintage">Analysis</h2>
+
+            <p class="text-sm leading-relaxed mb-4">
+                blank
+            </p>
+
+            <p class="text-sm leading-relaxed mb-4">
+                blank
+            
+            <p class="text-sm leading-relaxed mb-4">
+                blank
+            </p>
+            
+            <p class="text-sm leading-relaxed mb-4 font-bold">
+                Written by Ishaan Joshi
+            </p>
+
+            <div class="mt-8 pt-4 border-t border-black text-center">
+                <a href="index.html" class="classic-link text-base font-bold">
+                    &gt; &gt; RETURN TO LANDING PAGE &lt; &lt;
+                </a>
+            </div>
+
+        </main>
+
+        <!-- Footer (Simple Copyright Block) -->
+        <footer class="text-center text-xs p-3 border-t-2 border-black bg-gray-200">
+            <p>DOCUMENT REVISION 1.0 | COPYRIGHT 2025 (C) AUDIO VAULT CO.</p>
+            <p><a href="index.html" class="classic-link">Privacy Statement</a> | <a href="index.html" class="classic-link">Webmaster Contact</a></p>
+        </footer>
+    </div>
+</body>
+</html>
